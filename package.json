@@ -1,0 +1,17 @@
+{
+  "type": "module",
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-scroll": "^1.9.3"
+  },
+  "scripts": {
+    "dev": "vite"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.0.12",
+    "@vitejs/plugin-react": "^4.3.4",
+    "vite": "^4.2.1",
+    "tailwindcss": "^3.2.1"
+  }
+}
