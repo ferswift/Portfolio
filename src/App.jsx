@@ -6,6 +6,7 @@ import { Projects } from "./components/Projects";
 import { SectionAbout } from "./components/SectionAbout";
 import { SectionTop } from "./components/SectionTop";
 import { Footer } from "./components/Footer";
+import { EasterEgg } from "./components/EasterEgg";
 
 export const App = () => {
   return (
@@ -18,6 +19,7 @@ export const App = () => {
         <HighlightedProject />
         <Projects />
         <Contact />
+        <EasterEgg />
       </div>
       <Footer />
     </>
