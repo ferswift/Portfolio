@@ -24,7 +24,7 @@ export const Projects = () => {
         reverse
         image="/images/projeto-tic-tac.png"
         title="Projeto Tic-Tac-Toe"
-        description="Jogo da velha clássico desenvolvido com React e estilizado com Tailwind CSS."
+        description="Jogo da velha clássico desenvolvido com React"
         secondaryDescription="Desenvolvido com componentes funcionais e hooks."
         githubLink="https://github.com/ferswift/React-tic-tac-toe"
       />
@@ -94,6 +94,43 @@ export const Projects = () => {
         description="Projeto desenvolvido com React para cálculo de investimentos."
         secondaryDescription="Foco em usabilidade e design intuitivo."
         githubLink="https://github.com/ferswift/React-investment-calculator"
+      />
+      <Card
+        image="/images/netflix.png"
+        title="Netflix Clone"
+        description="Clone da interface do Netflix desenvolvido com HTML e CSS."
+        secondaryDescription="Foco em responsividade e fidelidade ao design original."
+        githubLink="https://github.com/ferswift/netflix-clone"
+      />
+      <Card
+        reverse
+        image="/images/dene.png"
+        title="Doceria Dene"
+        description="Landing page de uma doceria"
+        secondaryDescription="Foco em design responsivo e acessibilidade."
+        githubLink="https://github.com/ferswift/Project4"
+      />
+      <Card
+        image="/images/pepsi.png"
+        title="Pepsi Clone"
+        description="Clone da interface do site da Pepsi desenvolvido com HTML e CSS."
+        secondaryDescription="Foco em responsividade e fidelidade ao design original."
+        githubLink="https://github.com/ferswift/project5"
+      />
+      <Card
+        reverse
+        image="/images/hostels.png"
+        title="Hostels"
+        description="Landing page de uma empresa de hotelaria"
+        secondaryDescription="Foco em design responsivo e acessibilidade."
+        githubLink="https://github.com/ferswift/RWD-HOSTELS"
+      />
+      <Card
+        image="/images/fashion.png"
+        title="Fashion Site"
+        description="Site de moda desenvolvido com HTML e CSS."
+        secondaryDescription="Foco em responsividade e fidelidade ao design original."
+        githubLink="https://github.com/ferswift/Project3"
       />
     </section>
   );

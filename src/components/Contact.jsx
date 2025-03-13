@@ -7,7 +7,7 @@ export const Contact = () => {
       id="contact"
       className="flex flex-col justify-center items-center gap-10 text-center mt-50 border-t-1 border-b-1 border-cyan-300 py-20 bg-[url('public/react.svg')] bg-no-repeat bg-right bg-[length:20%_auto]"
     >
-      <h1 className="text-5xl text-white font-bold">Get in Contact</h1>
+      <h1 className="text-5xl text-white font-bold">Entre em Contato</h1>
       <p className="text-xl text-slate-600 max-w-[50rem]">
         Quer você esteja iniciando um projeto, tenha perguntas comerciais ou
         apenas queira dizer oi, minha caixa de entrada está sempre aberta, então
