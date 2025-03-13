@@ -9,42 +9,67 @@ export const Contact = () => {
     >
       <h1 className="text-5xl text-white font-bold">Get in Contact</h1>
       <p className="text-xl text-slate-600 max-w-[50rem]">
-        Whether you are starting a project, have business inquiries or just want
-        to say hi, my inbox is always open so feel free to reach out and I will
-        get back to you as soon as possible.
+        Quer você esteja iniciando um projeto, tenha perguntas comerciais ou
+        apenas queira dizer oi, minha caixa de entrada está sempre aberta, então
+        sinta-se à vontade para entrar em contato e eu retornarei o mais rápido
+        possível.
       </p>
       <div className="flex gap-5">
-        <Button
-          bgColor="bg-green-300"
-          textColor="text-black"
-          shadow="shadow-[0_10px_20px_rgba(0,255,0,0.5),0_6px_6px_rgba(0,255,0,0.5),0_0_100px_-10px_rgba(0,255,0,0.5)]"
-          className="w-[10rem] h-[3rem] bounce1"
+        <a
+          href="mailto:nandofhen@gmail.com"
+          target="_blank"
+          rel="noopener noreferrer"
         >
-          Email{" "}
-        </Button>
-        <Button
-          bgColor="bg-blue-300"
-          textColor="text-black"
-          shadow="shadow-[0_10px_20px_rgba(0,0,255,0.5),0_6px_6px_rgba(0,0,255,0.5),0_0_100px_-10px_rgba(0,0,255,0.5)]"
-          className="w-[10rem] h-[3rem] bounce2"
+          <Button
+            bgColor="bg-green-300"
+            textColor="text-black"
+            shadow="shadow-[0_10px_20px_rgba(0,255,0,0.5),0_6px_6px_rgba(0,255,0,0.5),0_0_100px_-10px_rgba(0,255,0,0.5)]"
+            className="w-[10rem] h-[3rem] bounce1"
+          >
+            Email
+          </Button>
+        </a>
+        <a
+          href="https://www.linkedin.com/in/fernando-ribeiro-863210250/"
+          target="_blank"
+          rel="noopener noreferrer"
         >
-          Linkedin{" "}
-        </Button>
-        <Button
-          bgColor="bg-purple-600"
-          textColor="text-black"
-          className="w-[10rem] h-[3rem] bounce3"
-          shadow="shadow-[0_10px_20px_rgba(128,0,128,0.5),0_6px_6px_rgba(128,0,128,0.5),0_0_100px_-10px_rgba(128,0,128,0.5)]"
+          <Button
+            bgColor="bg-blue-300"
+            textColor="text-black"
+            shadow="shadow-[0_10px_20px_rgba(0,0,255,0.5),0_6px_6px_rgba(0,0,255,0.5),0_0_100px_-10px_rgba(0,0,255,0.5)]"
+            className="w-[10rem] h-[3rem] bounce2"
+          >
+            Linkedin
+          </Button>
+        </a>
+        <a
+          href="https://github.com/ferswift"
+          target="_blank"
+          rel="noopener noreferrer"
         >
-          GitHub{" "}
-        </Button>
-        <Button
-          textColor="text-black"
-          shadow="shadow-[0_10px_20px_rgba(128,0,128,0.5),0_6px_6px_rgba(128,0,128,0.5),0_0_100px_-10px_rgba(128,0,128,0.5)]"
-          className="w-[10rem] h-[3rem] bounce4"
+          <Button
+            bgColor="bg-purple-600"
+            textColor="text-black"
+            shadow="shadow-[0_10px_20px_rgba(128,0,128,0.5),0_6px_6px_rgba(128,0,128,0.5),0_0_100px_-10px_rgba(128,0,128,0.5)]"
+            className="w-[10rem] h-[3rem] bounce3"
+          >
+            GitHub
+          </Button>
+        </a>
+        <a
+          href="https://www.instagram.com/ferr2xx/?hl=pt-br"
+          target="_blank"
+          rel="noopener noreferrer"
         >
-          Instagram{" "}
-        </Button>
+          <Button
+            textColor="text-black"
+            shadow="shadow-[0_10px_20px_rgba(128,0,128,0.5),0_6px_6px_rgba(128,0,128,0.5),0_0_100px_-10px_rgba(128,0,128,0.5)]"
+            className="w-[10rem] h-[3rem] bounce4"
+          >
+            Instagram
+          </Button>
+        </a>
       </div>
     </section>
   );

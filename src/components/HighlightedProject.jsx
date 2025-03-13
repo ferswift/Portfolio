@@ -33,24 +33,24 @@ export const HighlightedProject = () => {
           <p className="text-[1.25rem] text-slate-600">2024-Present</p>
         </div>
       </div>
-      <div className="flex flex-wrap gap-4">
+      <div className="flex flex-wrap gap-4 ">
         <img
-          className="w-[48%] h-auto object-cover"
+          className="w-[48%] h-auto object-cover transition-transform duration-300 hover:scale-120"
           src="/images/React-essentials.png"
           alt=""
         />
         <img
-          className="w-[48%] h-auto object-cover"
+          className="w-[48%] h-auto object-cover transition-transform duration-300 hover:scale-120"
           src="/images/React-essentials2.png"
           alt=""
         />
         <img
-          className="w-[48%] h-auto object-cover"
+          className="w-[48%] h-auto object-cover transition-transform duration-300 hover:scale-120"
           src="/images/React-essentials3.png"
           alt=""
         />
         <img
-          className="w-[48%] h-auto object-cover"
+          className="w-[48%] h-auto object-cover transition-transform duration-300 hover:scale-120"
           src="/images/React-essentials4.png"
           alt=""
         />

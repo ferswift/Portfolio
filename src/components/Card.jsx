@@ -14,8 +14,8 @@ export const Card = ({
     >
       <img
         src={image}
-        alt="cards"
-        className="w-[504px] h-[504px] object-cover block mx-auto"
+        alt={title}
+        className="w-[504px] h-[504px] object-cover block mx-auto transition-transform duration-300 hover:scale-120 rounded-lg"
       />
       <div className="flex flex-col justify-center items-center gap-5 text-center">
         <h3 className="text-[1.5rem] text-white font-bold">{title}</h3>

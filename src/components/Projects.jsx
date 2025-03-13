@@ -17,7 +17,7 @@ export const Projects = () => {
         title="Elegant Context"
         description="Implementação de Context API com React para gerenciamento global de estados."
         secondaryDescription="Sistema eficiente e minimalista para projetos React."
-        githubLink="https://github.com/ferswift?tab=repositories"
+        githubLink="https://github.com/ferswift/Elegant-context"
       />
 
       <Card
@@ -43,7 +43,7 @@ export const Projects = () => {
         title="Final Countdown"
         description="Aplicação de contagem regressiva com interface intuitiva, aplicando estados e refs."
         secondaryDescription="Utiliza React com controle de estado eficiente."
-        githubLink="https://github.com/ferswift?tab=repositories"
+        githubLink="https://github.com/ferswift/Final-CountDown"
       />
 
       <Card
@@ -60,7 +60,7 @@ export const Projects = () => {
         title="Place Picker"
         description="Ferramenta interativa para seleção de locais utilizando React, fundamentando-se em geolocalização."
         secondaryDescription="Foco em usabilidade e experiência do usuário."
-        githubLink="https://github.com/ferswift?tab=repositories"
+        githubLink="https://github.com/ferswift/Place-Picker"
       />
 
       <Card
@@ -90,7 +90,7 @@ export const Projects = () => {
       <Card
         reverse
         image="/images/React-investment-calculator.png"
-        title="Desafio Front-end"
+        title="React Investment Calculator"
         description="Projeto desenvolvido com React para cálculo de investimentos."
         secondaryDescription="Foco em usabilidade e design intuitivo."
         githubLink="https://github.com/ferswift/React-investment-calculator"
