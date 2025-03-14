@@ -1,5 +1,3 @@
-import React from "react";
-
 export const HighlightedProject = () => {
   return (
     <section className="my-40">

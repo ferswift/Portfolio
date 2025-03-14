@@ -1,5 +1,5 @@
 import { Contact } from "./components/Contact";
-import { HighlightedProject } from "./components/highlightedProject";
+import { HighlightedProject } from "./components/HighlightedProject";
 import { Marquee } from "./components/Marquee";
 import { NavBar } from "./components/NavBar";
 import { Projects } from "./components/Projects";
