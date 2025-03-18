@@ -4,7 +4,7 @@ export const Contact = () => {
   return (
     <section
       id="contact"
-      className="flex flex-col justify-center items-center gap-10 pt-35 tet-center mt-50 border-t-1 border-b-1 border-cyan-300 py-20 bg-[url('public/react.svg')] bg-no-repeat bg-top  bg-[length:20%_auto] md:bg-[length:10%_auto]"
+      className="flex flex-col justify-center items-center gap-10 pt-35 tet-center mt-50 border-t-1 border-b-1 border-cyan-300 py-20 bg-[url('/react.svg')] bg-no-repeat bg-top md:bg-[length:10%_auto]"
     >
       <h1 className="text-4xl md:text-5xl text-white font-bold">
         Entre em Contato

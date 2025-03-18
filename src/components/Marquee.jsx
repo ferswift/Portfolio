@@ -41,7 +41,7 @@ const icons = [
 export const Marquee = () => {
   return (
     <div className="flex justify-center items-center overflow-hidden w-full mt-10 animate-pulse">
-      <div className="flex gap-8 flex-wrap justify-center animate-marquee mx-2">
+      <div className="flex gap-8 justify-center animate-marquee mx-2">
         {/* Primeira parte dos ícones */}
         {icons.map((icon) => (
           <img
