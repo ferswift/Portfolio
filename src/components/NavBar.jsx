@@ -10,7 +10,7 @@ export const NavBar = () => {
   };
 
   return (
-    <nav className="flex justify-between items-center p-10 text-xl text-cyan-300 font-semibold border-b border-cyan-300">
+    <nav className="flex justify-between items-center p-5 md:p-10 text-xl text-cyan-300 font-semibold border-b border-cyan-300 relative">
       <Logo />
       <div className="hidden md:flex gap-5 items-center">
         <Link
@@ -35,21 +35,21 @@ export const NavBar = () => {
       </div>
 
       <button
-        className="md:hidden"
+        className="md:hidden text-2xl"
         onClick={toggleMenu}
         aria-label="Toggle menu"
       >
-        <button className="text-2xl">{isMenuOpen ? "X" : "☰"}</button>
+        {isMenuOpen ? "X" : "☰"}
       </button>
 
       {isMenuOpen && (
-        <div className="md:hidden absolute top-0 right-0 bg-slate-900 w-full p-10 border-1">
+        <div className="absolute top-0 right-0 bg-slate-900 w-full p-10 border-1">
           <div className="flex justify-end">
             <button className="text-2xl text-cyan-300" onClick={toggleMenu}>
               X
             </button>
           </div>
-          <div className="flex justify-center gap-5 items-center ">
+          <div className="flex flex-col justify-center items-center gap-5 mt-10">
             <Link
               to="about"
               smooth={true}

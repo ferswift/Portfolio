@@ -8,14 +8,14 @@ export const Card = ({
 }) => {
   return (
     <div
-      className={`flex justify-center items-center gap-5 ${
-        reverse ? "flex-row-reverse" : ""
+      className={`flex flex-col sm:flex-row justify-center items-center gap-5 ${
+        reverse ? "sm:flex-row-reverse" : ""
       }`}
     >
       <img
         src={image}
         alt={title}
-        className="w-[504px] h-[504px] object-cover block mx-auto transition-transform duration-300 hover:scale-120 rounded-lg"
+        className="w-full sm:w-[504px] h-[504px] object-cover block mx-auto transition-transform duration-300 hover:scale-120 rounded-lg"
       />
       <div className="flex flex-col justify-center items-center gap-5 text-center">
         <h3 className="text-[1.5rem] text-white font-bold">{title}</h3>
@@ -26,7 +26,7 @@ export const Card = ({
             href={githubLink}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block font-semibold no-underline tracking-tight py-2 px-4 rounded-lg transition-transform duration-300 ease-in-out hover:translate-y-[-4px] bg-blue-700 text-slate-100 shadow-[0_10px_20px_rgba(0,0,255,0.5),0_6px_6px_rgba(0,0,255,0.5),0_0_100px_-10px_rgba(0,0,255,0.5)]"
+            className="flex justify-center w-full font-semibold no-underline tracking-tight py-2 px-4 rounded-lg transition-transform duration-300 ease-in-out hover:translate-y-[-4px] bg-blue-700 text-slate-100 shadow-[0_10px_20px_rgba(0,0,255,0.5),0_6px_6px_rgba(0,0,255,0.5),0_0_100px_-10px_rgba(0,0,255,0.5)]"
           >
             GitHub
           </a>

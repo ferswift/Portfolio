@@ -4,13 +4,13 @@ export const Projects = () => {
   return (
     <section
       id="work"
-      className="flex flex-col justify-center items-center px-4 my-20"
+      className="flex flex-col justify-center items-center px-4 my-10 md:my-20 w-full overflow-x-hidden"
     >
-      <h1 className="text-4xl md:text-5xl text-white font-bold mb-7">
+      <h1 className="text-3xl md:text-4xl lg:text-5xl text-white font-bold mb-5 md:mb-7">
         Projects
       </h1>
 
-      <p className="text-[1.1rem] md:text-[1.25rem] text-slate-600 max-w-[50rem] text-center mb-10">
+      <p className="text-[1rem] md:text-[1.1rem] lg:text-[1.25rem] text-slate-600 max-w-[40rem] text-center mb-8 md:mb-10">
         Aqui estão alguns dos projetos que desenvolvi, focando em design
         moderno, funcionalidade e acessibilidade. Cada projeto demonstra minhas
         habilidades com React, diversas outras techs e boas práticas de
@@ -18,7 +18,7 @@ export const Projects = () => {
         funcionalidades!
       </p>
 
-      <div className="flex flex-col gap-10 items-center w-full">
+      <div className="flex flex-wrap gap-6 sm:gap-8 justify-center w-full max-w-screen-xl px-4">
         <Card
           image="/images/elegant-context.png"
           title="Elegant Context"
@@ -26,7 +26,6 @@ export const Projects = () => {
           secondaryDescription="Sistema eficiente e minimalista para projetos React."
           githubLink="https://github.com/ferswift/Elegant-context"
         />
-
         <Card
           reverse
           image="/images/projeto-tic-tac.png"
@@ -35,7 +34,6 @@ export const Projects = () => {
           secondaryDescription="Desenvolvido com componentes funcionais e hooks."
           githubLink="https://github.com/ferswift/React-tic-tac-toe"
         />
-
         <Card
           image="/images/Projeto-Gikalove.png"
           title="Projeto Gikalove"
@@ -43,7 +41,6 @@ export const Projects = () => {
           secondaryDescription="Focada em design responsivo e acessibilidade."
           githubLink="https://github.com/ferswift?tab=repositories"
         />
-
         <Card
           reverse
           image="/images/Final-countdown.png"
@@ -52,7 +49,6 @@ export const Projects = () => {
           secondaryDescription="Utiliza React com controle de estado eficiente."
           githubLink="https://github.com/ferswift/Final-CountDown"
         />
-
         <Card
           image="/images/Lista-de-Projetos.png"
           title="Lista de Projetos"
@@ -60,7 +56,6 @@ export const Projects = () => {
           secondaryDescription="Organização e navegação simplificada."
           githubLink="https://github.com/ferswift?tab=repositories"
         />
-
         <Card
           reverse
           image="/images/place-Picker.png"
@@ -69,7 +64,6 @@ export const Projects = () => {
           secondaryDescription="Foco em usabilidade e experiência do usuário."
           githubLink="https://github.com/ferswift/Place-Picker"
         />
-
         <Card
           image="/images/Cubos-cafe.jpg"
           title="Cubos Café"
@@ -77,7 +71,6 @@ export const Projects = () => {
           secondaryDescription="Estilo clean e responsivo."
           githubLink="https://github.com/ferswift/Cafeteria-Cubos"
         />
-
         <Card
           reverse
           image="/images/Desafio-front-end.png"
@@ -86,7 +79,6 @@ export const Projects = () => {
           secondaryDescription="Foco em boas práticas e acessibilidade."
           githubLink="https://github.com/ferswift/Desafio-frontend-m1"
         />
-
         <Card
           image="/images/React-essentials.png"
           title="React Essentials"
@@ -94,7 +86,6 @@ export const Projects = () => {
           secondaryDescription="Prático e reutilizável para qualquer projeto."
           githubLink="https://github.com/ferswift/react-essentials"
         />
-
         <Card
           reverse
           image="/images/React-investment-calculator.png"
@@ -103,7 +94,6 @@ export const Projects = () => {
           secondaryDescription="Foco em usabilidade e design intuitivo."
           githubLink="https://github.com/ferswift/React-investment-calculator"
         />
-
         <Card
           image="/images/netflix.png"
           title="Netflix Clone"
@@ -111,7 +101,6 @@ export const Projects = () => {
           secondaryDescription="Foco em responsividade e fidelidade ao design original."
           githubLink="https://github.com/ferswift/netflix-clone"
         />
-
         <Card
           reverse
           image="/images/dene.png"
@@ -120,7 +109,6 @@ export const Projects = () => {
           secondaryDescription="Foco em design responsivo e acessibilidade."
           githubLink="https://github.com/ferswift/Project4"
         />
-
         <Card
           image="/images/pepsi.png"
           title="Pepsi Clone"
@@ -128,7 +116,6 @@ export const Projects = () => {
           secondaryDescription="Foco em responsividade e fidelidade ao design original."
           githubLink="https://github.com/ferswift/project5"
         />
-
         <Card
           reverse
           image="/images/hostels.png"
@@ -137,7 +124,6 @@ export const Projects = () => {
           secondaryDescription="Foco em design responsivo e acessibilidade."
           githubLink="https://github.com/ferswift/RWD-HOSTELS"
         />
-
         <Card
           image="/images/fashion.png"
           title="Fashion Site"

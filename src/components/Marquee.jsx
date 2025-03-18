@@ -40,11 +40,16 @@ const icons = [
 
 export const Marquee = () => {
   return (
-    <div className="overflow-hidden w-full mt-10 animate-pulse">
-      <div className="flex gap-8 animate-marquee mx-2">
+    <div className="flex justify-center items-center overflow-hidden w-full mt-10 animate-pulse">
+      <div className="flex gap-8 flex-wrap justify-center animate-marquee mx-2">
         {/* Primeira parte dos ícones */}
         {icons.map((icon) => (
-          <img key={icon} src={icon} alt="techs logo" className="w-15 h-15" />
+          <img
+            key={icon.id}
+            src={icon}
+            alt="techs logo"
+            className="w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 lg:w-24 lg:h-24 xl:w-28 xl:h-28 transition-all duration-300 hover:scale-110"
+          />
         ))}
       </div>
     </div>

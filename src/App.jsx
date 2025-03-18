@@ -12,15 +12,13 @@ export const App = () => {
   return (
     <>
       <NavBar />
-      <div className="flex flex-col mx-50">
-        <SectionTop />
-        <SectionAbout />
-        <Marquee />
-        <HighlightedProject />
-        <Projects />
-        <Contact />
-        <EasterEgg />
-      </div>
+      <SectionTop />
+      <SectionAbout />
+      <Marquee />
+      <HighlightedProject />
+      <Projects />
+      <Contact />
+      <EasterEgg />
       <Footer />
     </>
   );
