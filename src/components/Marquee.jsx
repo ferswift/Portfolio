@@ -16,6 +16,7 @@ import icon15 from "../assets/VisualStudio.svg";
 import icon16 from "../assets/TailwindCSS.svg";
 import icon17 from "../assets/Insomnia.svg";
 import icon18 from "../assets/Next.js.svg";
+import icon19 from "../assets/vercel.svg";
 
 const icons = [
   icon6,
@@ -36,6 +37,7 @@ const icons = [
   icon14,
   icon15,
   icon17,
+  icon19,
 ];
 
 export const Marquee = () => {
@@ -48,7 +50,7 @@ export const Marquee = () => {
             key={icon.id}
             src={icon}
             alt="techs logo"
-            className="w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 lg:w-24 lg:h-24 xl:w-28 xl:h-28 transition-all duration-300 hover:scale-110"
+            className="w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 lg:w-24 lg:h-24 xl:w-20 xl:h-20 transition-all duration-300"
           />
         ))}
       </div>

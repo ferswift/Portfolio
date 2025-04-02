@@ -1,5 +1,6 @@
 import avatar from "../assets/avatar.jpg";
 import { Button } from "./Button";
+import { TypeAnimation } from "react-type-animation";
 
 export const SectionTop = () => {
   return (
@@ -12,10 +13,19 @@ export const SectionTop = () => {
       <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-slate-800 font-bold leading-tight">
         Olá, Me Chamo Fernando 👋
       </h2>
-      <h1 className="uppercase text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl leading-[1.1] font-bold text-slate-400">
-        front-end
-        <br />
-        Web Developer.
+      <h1 className="uppercase text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl leading-[1.1] font-bold text-slate-400 ">
+        <TypeAnimation
+          sequence={[
+            "Front-End Web Developer.",
+            2000,
+            "React Developer.",
+            2000,
+            "UI/UX Enthusiast.",
+            2000,
+          ]}
+          speed={50}
+          repeat={Infinity}
+        />
       </h1>
       <p className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl text-slate-600 max-w-full sm:max-w-3xl lg:max-w-4xl xl:max-w-5xl px-2 sm:px-4 lg:px-6 mb-6">
         Desenvolvedor{" "}

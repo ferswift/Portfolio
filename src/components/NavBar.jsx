@@ -12,23 +12,28 @@ export const NavBar = () => {
   return (
     <nav className="flex justify-between items-center p-5 md:p-10 text-xl text-cyan-300 font-semibold border-b border-cyan-300 relative">
       <Logo />
-      <div className="hidden md:flex gap-5 items-center">
+      <div className="hidden md:flex gap-5 items-center ">
         <Link
           to="about"
           smooth={true}
           duration={500}
-          className="cursor-pointer"
+          className="cursor-pointer hover:border-b border-cyan-300"
         >
           Sobre
         </Link>
-        <Link to="work" smooth={true} duration={500} className="cursor-pointer">
+        <Link
+          to="work"
+          smooth={true}
+          duration={500}
+          className="cursor-pointer hover:border-b border-cyan-300"
+        >
           Projetos
         </Link>
         <Link
           to="contact"
           smooth={true}
           duration={500}
-          className="cursor-pointer"
+          className="cursor-pointer hover:border-b border-cyan-300"
         >
           Contato
         </Link>

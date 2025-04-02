@@ -35,6 +35,7 @@ export const SectionAbout = () => {
             <li>Html5👍</li>
             <li>CSS3👍</li>
             <li>Tailwind CSS👍</li>
+            <li>Vercel👍</li>
           </ul>
         </div>
       </div>
