@@ -1,10 +1,30 @@
+import { useState } from "react";
 import { Card } from "./Card";
+import { projects } from "../data/projectsData";
+import { HiPlus } from "react-icons/hi2";
+import { motion } from "framer-motion";
 
 export const Projects = () => {
+  const [visibleCount, setVisibleCount] = useState(2);
+
+  const handleToggle = () => {
+    if (visibleCount >= projects.length) {
+      setVisibleCount(2);
+    } else {
+      setVisibleCount((prev) => prev + 2);
+    }
+  };
+
+  const displayedProjects = projects.slice(0, visibleCount);
+
   return (
-    <section
+    <motion.section
       id="work"
       className="flex flex-col justify-center items-center px-4 my-10 md:my-20 w-full overflow-x-hidden"
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8 }}
+      viewport={{ once: true }}
     >
       <h1 className="text-3xl md:text-4xl lg:text-5xl text-white font-bold mb-5 md:mb-7">
         Projects
@@ -12,126 +32,42 @@ export const Projects = () => {
 
       <p className="text-[1rem] md:text-[1.1rem] lg:text-[1.25rem] text-slate-600 max-w-[40rem] text-center mb-8 md:mb-10">
         Aqui estão alguns dos projetos que desenvolvi, focando em design
-        moderno, funcionalidade e acessibilidade. Cada projeto demonstra minhas
-        habilidades com React, diversas outras techs e boas práticas de
-        desenvolvimento. Confira e sinta-se à vontade para explorar o código e
-        funcionalidades!
+        moderno.
       </p>
 
       <div className="flex flex-wrap gap-6 sm:gap-8 justify-center w-full max-w-screen-xl px-4">
-        <Card
-          image="/images/elegant-context.png"
-          title="Elegant Context"
-          description="Implementação de Context API com React para gerenciamento global de estados."
-          secondaryDescription="Sistema eficiente e minimalista para projetos React."
-          githubLink="https://github.com/ferswift/Elegant-context"
-        />
-        <Card
-          reverse
-          image="/images/projeto-tic-tac.png"
-          title="Projeto Tic-Tac-Toe"
-          description="Jogo da velha clássico desenvolvido com React"
-          secondaryDescription="Desenvolvido com componentes funcionais e hooks."
-          githubLink="https://github.com/ferswift/React-tic-tac-toe"
-        />
-        <Card
-          image="/images/Projeto-Gikalove.png"
-          title="Projeto Gikalove"
-          description="Landing page estilosa e interativa desenvolvida com React e module.css"
-          secondaryDescription="Focada em design responsivo e acessibilidade."
-          githubLink="https://github.com/ferswift?tab=repositories"
-        />
-        <Card
-          reverse
-          image="/images/Final-countdown.png"
-          title="Final Countdown"
-          description="Aplicação de contagem regressiva com interface intuitiva, aplicando estados e refs."
-          secondaryDescription="Utiliza React com controle de estado eficiente."
-          githubLink="https://github.com/ferswift/Final-CountDown"
-        />
-        <Card
-          image="/images/Lista-de-Projetos.png"
-          title="Lista de Projetos"
-          description="Uma aplicação de gerenciamento de projetos com React feita para prática e estudo."
-          secondaryDescription="Organização e navegação simplificada."
-          githubLink="https://github.com/ferswift?tab=repositories"
-        />
-        <Card
-          reverse
-          image="/images/place-Picker.png"
-          title="Place Picker"
-          description="Ferramenta interativa para seleção de locais utilizando React, fundamentando-se em geolocalização."
-          secondaryDescription="Foco em usabilidade e experiência do usuário."
-          githubLink="https://github.com/ferswift/Place-Picker"
-        />
-        <Card
-          image="/images/Cubos-cafe.jpg"
-          title="Cubos Café"
-          description="Plataforma desenvolvida com HTML, CSS, AXIOS, DB, DOM entre diversos outros."
-          secondaryDescription="Estilo clean e responsivo."
-          githubLink="https://github.com/ferswift/Cafeteria-Cubos"
-        />
-        <Card
-          reverse
-          image="/images/Desafio-front-end.png"
-          title="Desafio Front-end"
-          description="Projeto desenvolvido como desafio técnico com HTML e CSS."
-          secondaryDescription="Foco em boas práticas e acessibilidade."
-          githubLink="https://github.com/ferswift/Desafio-frontend-m1"
-        />
-        <Card
-          image="/images/React-essentials.png"
-          title="React Essentials"
-          description="Coleção de componentes essenciais desenvolvidos com React, meu primeiro projetinho :)"
-          secondaryDescription="Prático e reutilizável para qualquer projeto."
-          githubLink="https://github.com/ferswift/react-essentials"
-        />
-        <Card
-          reverse
-          image="/images/React-investment-calculator.png"
-          title="React Investment Calculator"
-          description="Projeto desenvolvido com React para cálculo de investimentos."
-          secondaryDescription="Foco em usabilidade e design intuitivo."
-          githubLink="https://github.com/ferswift/React-investment-calculator"
-        />
-        <Card
-          image="/images/netflix.png"
-          title="Netflix Clone"
-          description="Clone da interface do Netflix desenvolvido com HTML e CSS."
-          secondaryDescription="Foco em responsividade e fidelidade ao design original."
-          githubLink="https://github.com/ferswift/netflix-clone"
-        />
-        <Card
-          reverse
-          image="/images/dene.png"
-          title="Doceria Dene"
-          description="Landing page de uma doceria."
-          secondaryDescription="Foco em design responsivo e acessibilidade."
-          githubLink="https://github.com/ferswift/Project4"
-        />
-        <Card
-          image="/images/pepsi.png"
-          title="Pepsi Clone"
-          description="Clone da interface do site da Pepsi desenvolvido com HTML e CSS."
-          secondaryDescription="Foco em responsividade e fidelidade ao design original."
-          githubLink="https://github.com/ferswift/project5"
-        />
-        <Card
-          reverse
-          image="/images/hostels.png"
-          title="Hostels"
-          description="Landing page de uma empresa de hotelaria."
-          secondaryDescription="Foco em design responsivo e acessibilidade."
-          githubLink="https://github.com/ferswift/RWD-HOSTELS"
-        />
-        <Card
-          image="/images/fashion.png"
-          title="Fashion Site"
-          description="Site de moda desenvolvido com HTML e CSS."
-          secondaryDescription="Foco em responsividade e fidelidade ao design original."
-          githubLink="https://github.com/ferswift/Project3"
-        />
+        {displayedProjects.map((project, index) => (
+          <motion.div
+            key={project.title + index}
+            initial={{ opacity: 0, y: 50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 2, delay: index * 0.02 }}
+          >
+            <Card
+              image={project.image}
+              title={project.title}
+              description={project.description}
+              secondaryDescription={project.secondaryDescription}
+              githubLink={project.githubLink}
+              reverse={project.reverse}
+            />
+          </motion.div>
+        ))}
       </div>
-    </section>
+
+      {projects.length > 2 && (
+        <button
+          onClick={handleToggle}
+          className="mt-20 px-6 py-3 bg-[#00BFFF] hover:bg-[#1ec8ff] text-white font-semibold rounded-2xl transition duration-300 flex items-center gap-2 shadow-[0_0_15px_#00BFFF] hover:shadow-[0_0_25px_#00BFFF] active:shadow-[0_0_30px_#00BFFF] focus:shadow-[0_0_30px_#00BFFF] animate-bounce"
+        >
+          {visibleCount >= projects.length ? "Ver menos" : "Ver mais"}
+          <HiPlus
+            className={`transition-transform duration-300 text-xl ${
+              visibleCount >= projects.length ? "rotate-45" : "rotate-0"
+            }`}
+          />
+        </button>
+      )}
+    </motion.section>
   );
 };

@@ -2,12 +2,17 @@ import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
+import { motion } from "framer-motion";
 
 export const Contact = () => {
   return (
-    <section
+    <motion.section
       id="contact"
-      className="flex flex-col justify-center items-center gap-10 pt-35 tet-center mt-50 border-2 border-cyan-300 py-20"
+      className="flex flex-col justify-center items-center gap-10 pt-35 text-center mt-50 border-2 border-cyan-300 py-20"
+      initial={{ opacity: 0, scale: 0.8 }}
+      whileInView={{ opacity: 1, scale: 1 }}
+      transition={{ duration: 0.6, ease: "easeOut" }}
+      viewport={{ once: true }}
     >
       <h1 className="text-4xl md:text-5xl text-white font-bold">
         Entre em Contato
@@ -47,6 +52,6 @@ export const Contact = () => {
           <MdEmail className="w-16 h-16 md:w-20 md:h-20 hover:text-[#D44638] transition duration-500 hover:drop-shadow-[0_0_10px_#D44638] active:text-[#D44638] focus:text-[#D44638] active:drop-shadow-[0_0_10px_#D44638] focus:drop-shadow-[0_0_10px_#D44638]" />
         </a>
       </div>
-    </section>
+    </motion.section>
   );
 };
