@@ -33,7 +33,7 @@ export const Contact = () => {
         </a>
 
         <a
-          href="https://www.linkedin.com/in/fernando-ribeiro-863210250/"
+          href="https://www.linkedin.com/in/ferswift/"
           target="_blank"
           rel="noopener noreferrer"
         >
